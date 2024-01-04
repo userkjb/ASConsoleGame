@@ -9,5 +9,9 @@
     <ClCompile Include="ConsoleGame.cpp">
       <Filter>Core</Filter>
     </ClCompile>
+    <ClCompile Include="ConsoleScreen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ConsoleScreen.h" />
   </ItemGroup>
 </Project>

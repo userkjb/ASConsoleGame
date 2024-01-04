@@ -5,6 +5,12 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleGame", "ConsoleGame\ConsoleGame.vcxproj", "{4BDF4B04-F366-4520-A39B-2EC8DD9FABBC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Game", "Game", "{57A43E22-2DEB-4545-9A5E-F66BD40058EB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleEngine", "ConsoleEngine\ConsoleEngine.vcxproj", "{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Engine", "Engine", "{3B8AC56E-F004-4F5E-9DC1-0772ECA4D6E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,9 +27,21 @@ Global
 		{4BDF4B04-F366-4520-A39B-2EC8DD9FABBC}.Release|x64.Build.0 = Release|x64
 		{4BDF4B04-F366-4520-A39B-2EC8DD9FABBC}.Release|x86.ActiveCfg = Release|Win32
 		{4BDF4B04-F366-4520-A39B-2EC8DD9FABBC}.Release|x86.Build.0 = Release|Win32
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Debug|x64.ActiveCfg = Debug|x64
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Debug|x64.Build.0 = Debug|x64
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Debug|x86.ActiveCfg = Debug|Win32
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Debug|x86.Build.0 = Debug|Win32
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Release|x64.ActiveCfg = Release|x64
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Release|x64.Build.0 = Release|x64
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Release|x86.ActiveCfg = Release|Win32
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{4BDF4B04-F366-4520-A39B-2EC8DD9FABBC} = {57A43E22-2DEB-4545-9A5E-F66BD40058EB}
+		{1C6AE85B-6105-4C8D-AC60-FCFF1BD2DC35} = {3B8AC56E-F004-4F5E-9DC1-0772ECA4D6E0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6C0AFF28-D5D7-4F1A-A289-47D6116C03AD}
