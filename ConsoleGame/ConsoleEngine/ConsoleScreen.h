@@ -2,6 +2,9 @@
 class ConsoleScreen
 {
 public :
-	void Render(const char* _Char);
+	void Render(const char* _BaseChar);
+
+private:
+	char BaseCh = ' ';
 };
 
