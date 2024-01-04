@@ -1,9 +1,9 @@
 ﻿#include <iostream>
-#include <ConsoleGame/ConsoleGame/ConsoleEngine/ConsoleScreen.h>
+#include <ConsoleEngine/ConsoleScreen.h>
 
 int main()
 {
-    ConsoleScreen screen = ConsoleScreen();
-    
+    ConsoleScreen screen = ConsoleScreen();    
+
     screen.Render("xxxx");
 }
