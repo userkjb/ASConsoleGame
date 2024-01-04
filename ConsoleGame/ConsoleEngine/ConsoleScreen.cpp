@@ -16,6 +16,12 @@ void ConsoleScreen::Render(const char* _BaseChar)
 	}
 }
 
+void ConsoleScreen::ClearScreen()
+{
+	system("cls");
+	// ....
+}
+
 void ConsoleScreen::CreateMap(int _X, int _Y)
 {
 	X = _X;

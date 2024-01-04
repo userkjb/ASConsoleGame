@@ -4,7 +4,7 @@ class ConsoleScreen
 public :
 	ConsoleScreen(char _Basechar);
 	void Render(const char* _BaseChar);
-	//void ClearScreen();
+	void ClearScreen();
 
 	void CreateMap(int _X, int _Y);
 	void DeleteMap();
