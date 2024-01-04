@@ -3,7 +3,7 @@
 
 int main()
 {
-    ConsoleScreen screen = ConsoleScreen();    
+    ConsoleScreen screen = ConsoleScreen('*');
 
     screen.Render("xxxx");
 }
