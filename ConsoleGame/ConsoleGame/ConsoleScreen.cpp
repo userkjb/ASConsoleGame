@@ -2,4 +2,5 @@
 
 ConsoleScreen::ConsoleScreen(char _BaseChar)
 {
+	BaseCh = _BaseChar;
 }
