@@ -1,5 +1,5 @@
 #pragma once
-class TwoDimensionsPos
+class int2
 {
 public :
 	int X = 0;
