@@ -5,6 +5,7 @@ class ConsoleObject
 {
 public :
 	ConsoleObject();
+	ConsoleObject(const int2& _StartPos, char _RenderChar);
 	~ConsoleObject();
 	
 	inline int2 GetPos() const
@@ -16,6 +17,11 @@ public :
 		Pos = _Pos;
 	}
 	
+	inline void SetRanderChar(char _ch)
+	{
+		RanderChar = _ch;
+	}
+
 	inline char GetRanderChar() const
 	{
 		return RanderChar;
