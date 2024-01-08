@@ -10,7 +10,7 @@ public :
 	void PrintScreen();
 	void ClearScreen();
 
-
+	void SetChar(const class ConsoleObject* _Object);
 	void SetChar(const class ConsoleObject& _Object);
 	void SetChar(const int2& _Pos, char _Char);
 

@@ -86,3 +86,35 @@ void ConsoleScreen::ClearScreen()
 		ScreenData[y][ScreenX] = '\n';
 	}
 }
+
+void ConsoleScreen::SetChar(const ConsoleObject* _Object)
+{
+	
+}
+
+void ConsoleScreen::SetChar(const ConsoleObject& _Object)
+{
+}
+
+void ConsoleScreen::SetChar(const int2& _Pos, char _Char)
+{
+	if (_Pos.Y < 0)
+	{
+		return;
+	}
+	if (_Pos.X < 0)
+	{
+		return;
+	}
+
+	if (ScreenX <= _Pos.X)
+	{
+		return;
+	}
+	if (ScreenY <= _Pos.Y)
+	{
+		return;
+	}
+
+	ScreenData[_Pos.Y][_Pos.X] = _Char;
+}
