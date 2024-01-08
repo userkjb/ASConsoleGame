@@ -49,6 +49,8 @@ void ConsoleScreen::CreateScreen(int _ScreenX, int _ScreenY)
 			MsgBoxAssert("스크린 생성에 실패했습니다.");
 		}
 	}
+
+	ClearScreen();
 }
 
 void ConsoleScreen::ReleaseScreen()
@@ -75,7 +77,7 @@ void ConsoleScreen::PrintScreen()
 {
 	system("cls");
 
-	for (int y = 0; y = ScreenY; y++)
+	for (int y = 0; y < ScreenY; y++)
 	{
 		if (ScreenData[y] == nullptr)
 		{
