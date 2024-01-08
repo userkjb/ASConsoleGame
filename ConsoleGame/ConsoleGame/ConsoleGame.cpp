@@ -49,6 +49,12 @@ int main()
 		}
 
 		Screen.SetChar(NewPlayer);
-		Screen.PrintScreen();
+		Screen.PrintScreen();		
+	}
+
+	if (NewBullet)
+	{
+		delete[] NewBullet;
+		NewBullet = nullptr;
 	}
 }
