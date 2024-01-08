@@ -14,6 +14,15 @@ public :
 	void SetChar(const class ConsoleObject& _Object);
 	void SetChar(const int2& _Pos, char _Char);
 
+	inline int GetScreenX()
+	{
+		return ScreenX;
+	}
+	inline int GetScreenY()
+	{
+		return ScreenY;
+	}
+
 private:
 	char** ScreenData = nullptr;
 	int ScreenX = -1;
