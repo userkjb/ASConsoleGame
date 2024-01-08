@@ -5,8 +5,6 @@
 class ConsoleScreen
 {
 public :
-	ConsoleScreen(char _Basechar);
-
 	void CreateScreen(int _ScreenX, int _ScreenY);
 	void ReleaseScreen();
 	void PrintScreen();
@@ -17,8 +15,8 @@ public :
 	void SetChar(const int2& _Pos, char _Char);
 
 private:
-	char** Map = nullptr;
-	bool b_CreateMap = false;
-	int X = 0;
+	char** ScreenData = nullptr;
+	int ScreenX = -1;
+	int ScreenY = -1;
 };
 
