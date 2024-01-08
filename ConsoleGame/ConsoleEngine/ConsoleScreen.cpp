@@ -58,6 +58,23 @@ void ConsoleScreen::ReleaseScreen()
 	}
 }
 
+void ConsoleScreen::PrintScreen()
+{
+	system("cls");
+
+	for (int y = 0; y = ScreenY; y++)
+	{
+		if (ScreenData[y] == nullptr)
+		{
+			MsgBoxAssert("존재하지 않는 라인츨 출력하려고 했습니다.");
+		}
+
+		printf_s(ScreenData[y]);
+	}
+
+	ClearScreen();
+}
+
 void ConsoleScreen::ClearScreen()
 {
 	for (int y = 0; y < ScreenY; y++)
