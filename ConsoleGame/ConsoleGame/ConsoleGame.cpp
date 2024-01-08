@@ -12,5 +12,5 @@ int main()
 	Screen.CreateScreen(20, 20);
 
 	Player NewPlayer;
-	NewPlayer.SetPos({ Screen.GetScreenX / 2, Screen.GetScreenY - 2 });
+	NewPlayer.SetPos({ Screen.GetScreenX() / 2, Screen.GetScreenY() - 2});
 }
