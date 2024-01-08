@@ -5,5 +5,18 @@ class Bullet : public ConsoleObject
 {
 public :
 	Bullet();
+
+	inline void Fire()
+	{
+		IsFire = true;
+	}
+
+	inline bool GetIsFire()
+	{
+		return IsFire;
+	}
+
+private :
+	bool IsFire = false;
 };
 
