@@ -38,6 +38,26 @@ void ConsoleScreen::CreateScreen(int _ScreenX, int _ScreenY)
 	}
 }
 
+void ConsoleScreen::ReleaseScreen()
+{
+	for (int y = 0; y < ScreenY; y++)
+	{
+		if (ScreenData[y] == nullptr)
+		{
+			continue;
+		}
+
+		delete[] ScreenData[y];
+		ScreenData[y] == nullptr;
+	}
+
+	if (ScreenData == nullptr)
+	{
+		delete[] ScreenData;
+		ScreenData = nullptr;
+	}
+}
+
 void ConsoleScreen::ClearScreen()
 {
 	for (int y = 0; y < ScreenY; y++)
