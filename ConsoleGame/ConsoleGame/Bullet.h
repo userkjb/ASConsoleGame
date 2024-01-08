@@ -5,6 +5,7 @@ class Bullet : public ConsoleObject
 {
 public :
 	Bullet();
+	void BulletMove();
 
 	inline void Fire()
 	{
