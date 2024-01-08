@@ -40,5 +40,12 @@ void ConsoleScreen::CreateScreen(int _ScreenX, int _ScreenY)
 
 void ConsoleScreen::ClearScreen()
 {
-
+	for (int y = 0; y < ScreenY; y++)
+	{
+		for (int x = 0; x < ScreenX; x++)
+		{
+			ScreenData[y][x] = '*';
+		}
+		ScreenData[y][ScreenX] = '\n';
+	}
 }
