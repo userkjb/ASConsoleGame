@@ -3,8 +3,20 @@
 #include "ConsoleObject.h"
 
 
+ConsoleScreen::ConsoleScreen()
+{
+
+}
+
+ConsoleScreen::~ConsoleScreen()
+{
+	ReleaseScreen();
+}
+
 void ConsoleScreen::CreateScreen(int _ScreenX, int _ScreenY)
 {
+	ReleaseScreen();
+
 	if (0 >= _ScreenX)
 	{
 		MsgBoxAssert("스크린 X크기가 0이기 때문에 에러");

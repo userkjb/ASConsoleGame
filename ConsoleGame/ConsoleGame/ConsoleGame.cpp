@@ -10,4 +10,7 @@ int main()
 
 	ConsoleScreen Screen = ConsoleScreen();
 	Screen.CreateScreen(20, 20);
+
+	Player NewPlayer;
+	NewPlayer.SetPos({ Screen.GetScreenX / 2, Screen.GetScreenY - 2 });
 }

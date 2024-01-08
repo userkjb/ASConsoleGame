@@ -5,6 +5,9 @@
 class ConsoleScreen
 {
 public :
+	ConsoleScreen();
+	virtual ~ConsoleScreen();
+
 	void CreateScreen(int _ScreenX, int _ScreenY);
 	void ReleaseScreen();
 	void PrintScreen();
