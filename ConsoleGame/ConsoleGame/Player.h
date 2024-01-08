@@ -1,5 +1,9 @@
 #pragma once
-class Player
+
+#include <ConsoleEngine/ConsoleObject.h>
+
+class Player : public ConsoleObject
 {
+
 };
 
