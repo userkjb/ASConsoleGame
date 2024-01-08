@@ -13,4 +13,14 @@ int main()
 
 	Player NewPlayer;
 	NewPlayer.SetPos({ Screen.GetScreenX() / 2, Screen.GetScreenY() - 2});
+
+	while (true)
+	{
+		Sleep(100);
+
+		NewPlayer.InputKey();
+
+		Screen.SetChar(NewPlayer);
+		Screen.PrintScreen();
+	}
 }
