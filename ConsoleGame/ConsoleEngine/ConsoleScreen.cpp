@@ -1,5 +1,6 @@
 #include "ConsoleScreen.h"
 #include <iostream>
+#include "ConsoleObject.h"
 
 
 void ConsoleScreen::CreateScreen(int _ScreenX, int _ScreenY)
@@ -89,11 +90,12 @@ void ConsoleScreen::ClearScreen()
 
 void ConsoleScreen::SetChar(const ConsoleObject* _Object)
 {
-	
+	SetChar(_Object->GetPos(), _Object->GetRenderChar());
 }
 
 void ConsoleScreen::SetChar(const ConsoleObject& _Object)
 {
+	SetChar(_Object.GetPos(), _Object.GetRenderChar());
 }
 
 void ConsoleScreen::SetChar(const int2& _Pos, char _Char)
