@@ -17,18 +17,18 @@ public :
 		Pos = _Pos;
 	}
 	
-	inline void SetRanderChar(char _ch)
+	inline void SetRenderChar(char _ch)
 	{
-		RanderChar = _ch;
+		RenderChar = _ch;
 	}
 
-	inline char GetRanderChar() const
+	inline char GetRenderChar() const
 	{
-		return RanderChar;
+		return RenderChar;
 	}
 
 private :
 	int2 Pos = { 0, 0 };
-	char RanderChar = '@';
+	char RenderChar = '@';
 };
 
