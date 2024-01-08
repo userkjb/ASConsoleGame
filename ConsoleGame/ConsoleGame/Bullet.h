@@ -1,5 +1,9 @@
 #pragma once
-class Bullet
+#include <ConsoleEngine/ConsoleObject.h>
+
+class Bullet : public ConsoleObject
 {
+public :
+	Bullet();
 };
 
