@@ -7,4 +7,7 @@
 int main()
 {
 	LeckCheck;
+
+	ConsoleScreen Screen = ConsoleScreen();
+	Screen.CreateScreen(20, 20);
 }
