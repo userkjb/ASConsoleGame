@@ -17,7 +17,6 @@ public :
 	void SetChar(const int2& _Pos, char _Char);
 
 private:
-	char BaseCh = ' ';
 	char** Map = nullptr;
 	bool b_CreateMap = false;
 	int X = 0;
