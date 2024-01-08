@@ -37,6 +37,17 @@ int main()
 			}
 		}
 
+		for (int i = 0; i < BulletCount; i++)
+		{
+			if (NewBullet[i].GetIsFire() == false)
+			{
+				continue;
+			}
+
+			NewBullet[i].BulletMove();
+			Screen.SetChar(NewBullet[i]);
+		}
+
 		Screen.SetChar(NewPlayer);
 		Screen.PrintScreen();
 	}
