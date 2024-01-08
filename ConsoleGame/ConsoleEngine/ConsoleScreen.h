@@ -1,13 +1,20 @@
 #pragma once
+#include "EngineDebug.h"
+#include "ConsoleMath.h"
+
 class ConsoleScreen
 {
 public :
 	ConsoleScreen(char _Basechar);
-	void Render(const char* _BaseChar);
+
+	void CreateScreen(int _ScreenX, int _ScreenY);
+	void ReleaseScreen();
+	void PrintScreen();
 	void ClearScreen();
 
-	void CreateMap(int _X, int _Y);
-	void DeleteMap();
+
+	void SetChar(const class ConsoleObject& _Object);
+	void SetChar(const int2& _Pos, char _Char);
 
 private:
 	char BaseCh = ' ';
