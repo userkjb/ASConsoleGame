@@ -17,14 +17,19 @@ public :
 		Pos = _Pos;
 	}
 	
+	inline char GetRenderChar() const
+	{
+		return RenderChar;
+	}
+
 	inline void SetRenderChar(char _ch)
 	{
 		RenderChar = _ch;
 	}
 
-	inline char GetRenderChar() const
+	inline void AddPos(const int2& _Dir)
 	{
-		return RenderChar;
+		Pos += _Dir;
 	}
 
 private :
