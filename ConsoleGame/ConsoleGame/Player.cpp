@@ -1,9 +1,16 @@
 #include "Player.h"
+
 #include <conio.h>
 
 void Player::InputKey()
 {
 	IsFire = false;
+
+	int InputCount = _kbhit();
+	if (InputCount == 0)
+	{
+		return;
+	}
 
 	int Select = _getch();
 
