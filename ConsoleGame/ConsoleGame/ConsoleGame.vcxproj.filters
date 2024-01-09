@@ -11,9 +11,11 @@
     </ClCompile>
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="Bullet.cpp" />
+    <ClCompile Include="Monster.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h" />
     <ClInclude Include="Bullet.h" />
+    <ClInclude Include="Monster.h" />
   </ItemGroup>
 </Project>
