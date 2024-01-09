@@ -1,5 +1,7 @@
 #pragma once
-class Monster
+#include <ConsoleEngine/ConsoleObject.h>
+
+class Monster : public ConsoleObject
 {
 };
 
