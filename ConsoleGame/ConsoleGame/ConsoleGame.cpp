@@ -49,6 +49,11 @@ int main()
 			}
 		}
 
+		for (int i = 0; i < MonsterCount; i++)
+		{
+			Screen.SetChar(ArrMonster[i]);
+		}
+
 		for (int i = 0; i < BulletCount; i++)
 		{
 			if (NewBullet[i].GetIsFire() == false)
