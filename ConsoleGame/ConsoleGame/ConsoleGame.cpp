@@ -4,6 +4,7 @@
 
 #include "Player.h"
 #include "Bullet.h"
+#include "Monster.h"
 
 int main()
 {
@@ -14,6 +15,17 @@ int main()
 
 	Player NewPlayer;
 	NewPlayer.SetPos({ Screen.GetScreenX() / 2, Screen.GetScreenY() - 2});
+
+	const int MonsterCount = Screen.GetScreenX() / 2;
+	//Monster ArrMonster0[100];
+	//Monster ArrMonster1[10];
+	ConsoleObject** ArrMonster = new ConsoleObject * [MonsterCount];
+	for (int i = 0; i < MonsterCount; i++)
+	{
+		ArrMonster[i] = new Monster();
+		ArrMonster[i]->SetPos({ i, 0 });
+		ArrMonster[i]->SetRenderChar('&');
+	}
 
 	const int BulletCount = Screen.GetScreenY() * 2;
 	Bullet* NewBullet = new Bullet[BulletCount];
