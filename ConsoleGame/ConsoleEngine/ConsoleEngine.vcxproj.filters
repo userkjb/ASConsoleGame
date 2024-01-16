@@ -5,10 +5,12 @@
     <ClInclude Include="ConsoleMath.h" />
     <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="EngineDebug.h" />
+    <ClInclude Include="ConsoleCore.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ConsoleScreen.cpp" />
     <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="EngineDebug.cpp" />
+    <ClCompile Include="ConsoleCore.cpp" />
   </ItemGroup>
 </Project>

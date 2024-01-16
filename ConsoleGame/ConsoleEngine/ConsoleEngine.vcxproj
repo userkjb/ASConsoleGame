@@ -127,12 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="ConsoleCore.h" />
     <ClInclude Include="ConsoleObject.h" />
     <ClInclude Include="ConsoleScreen.h" />
     <ClInclude Include="ConsoleMath.h" />
     <ClInclude Include="EngineDebug.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ConsoleCore.cpp" />
     <ClCompile Include="ConsoleObject.cpp" />
     <ClCompile Include="ConsoleScreen.cpp" />
     <ClCompile Include="EngineDebug.cpp" />
