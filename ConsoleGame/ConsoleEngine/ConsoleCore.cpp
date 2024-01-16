@@ -36,7 +36,31 @@ void ConsoleCore::Start()
 					Object->Update();
 				}
 			}
-		}
+		} // End
+
+		// 렌더링
+		{
+			std::map<int, std::list<ConsoleObject*>>::iterator OrderStartIter = AllRenderObject.begin();
+			std::map<int, std::list<ConsoleObject*>>::iterator OrderEndIter = AllRenderObject.end();
+
+			for (; OrderStartIter != OrderEndIter; ++OrderStartIter)
+			{
+				std::list<ConsoleObject*>& ObjectList = OrderStartIter->second;
+
+				std::list<ConsoleObject*>::iterator StartIter = ObjectList.begin();
+				std::list<ConsoleObject*>::iterator EndIter = ObjectList.end();
+				for (; StartIter != EndIter; ++StartIter)
+				{
+					ConsoleObject* Object = *StartIter;
+
+					if (Object == nullptr)
+					{
+						MsgBoxAssert("오브젝트가 nullptr 입니다.");
+					}
+					Screen.SetChar(Object);
+				}
+			}
+		}// End
 	}
 }
 
