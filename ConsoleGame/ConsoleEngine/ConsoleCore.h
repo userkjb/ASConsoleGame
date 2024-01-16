@@ -15,6 +15,7 @@ public :
 
 	void Init(int2 _ScreenSize);
 	void Start();
+	void EngineEnd();
 
 private :
 	std::map<int, std::list<ConsoleObject*>> AllUpdateObject;

@@ -11,3 +11,8 @@ void ConsoleCore::Init(int2 _ScreenSize)
 void ConsoleCore::Start()
 {
 }
+
+void ConsoleCore::EngineEnd()
+{
+	EngineUpdate = false;
+}
