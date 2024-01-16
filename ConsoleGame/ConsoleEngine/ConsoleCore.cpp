@@ -63,7 +63,9 @@ void ConsoleCore::Start()
 		}
 		Screen.PrintScreen();
 		// End
-	}
+
+
+	}// end while
 }
 
 void ConsoleCore::EngineEnd()
