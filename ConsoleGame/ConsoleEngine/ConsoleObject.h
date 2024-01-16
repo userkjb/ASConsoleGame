@@ -32,6 +32,11 @@ public :
 		Pos += _Dir;
 	}
 
+	virtual void Update()
+	{
+
+	}
+
 private :
 	int2 Pos = { 0, 0 };
 	char RenderChar = '@';

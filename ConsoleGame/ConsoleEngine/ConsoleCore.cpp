@@ -10,6 +10,34 @@ void ConsoleCore::Init(int2 _ScreenSize)
 
 void ConsoleCore::Start()
 {
+	while (EngineUpdate)
+	{
+		Sleep(100);
+
+		// Update
+		{
+			std::map<int, std::list<ConsoleObject*>>::iterator OrderStartIter = AllUpdateObject.begin();
+			std::map<int, std::list<ConsoleObject*>>::iterator OrderEndIter = AllUpdateObject.end();
+
+			for (; OrderStartIter != OrderEndIter; ++OrderStartIter)
+			{
+				std::list<ConsoleObject*>& ObjectList = OrderStartIter->second;
+
+				std::list<ConsoleObject*>::iterator StartIter = ObjectList.begin();
+				std::list<ConsoleObject*>::iterator EndIter = ObjectList.end();
+				for (; StartIter != EndIter; ++StartIter)
+				{
+					ConsoleObject* Object = *StartIter;
+					if (Object == nullptr)
+					{
+						MsgBoxAssert("오브젝트가 nullptr 입니다.");
+					}
+
+					Object->Update();
+				}
+			}
+		}
+	}
 }
 
 void ConsoleCore::EngineEnd()
