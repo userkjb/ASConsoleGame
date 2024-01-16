@@ -141,6 +141,11 @@
   <ItemGroup>
     <ClCompile Include="SnakeGame.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleEngine\ConsoleEngine.vcxproj">
+      <Project>{1c6ae85b-6105-4c8d-ac60-fcff1bd2dc35}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
