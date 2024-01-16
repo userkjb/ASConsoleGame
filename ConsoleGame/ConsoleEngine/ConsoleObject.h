@@ -37,8 +37,19 @@ public :
 
 	}
 
+	void Destroy()
+	{
+		DeathValue = true;
+	}
+
+	bool IsPendingKill()
+	{
+		return DeathValue;
+	}
+
 private :
 	int2 Pos = { 0, 0 };
 	char RenderChar = '@';
+	bool DeathValue = false;
 };
 
