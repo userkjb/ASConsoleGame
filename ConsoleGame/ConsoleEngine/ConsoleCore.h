@@ -1,8 +1,23 @@
 #pragma once
 
+#include <map>
+#include <list>
 
+#include "ConsoleScreen.h"
+#include "ConsoleObject.h"
 
 class ConsoleCore
 {
+	friend class ConsoleObject;
+
+public :
+
+	void Init(int2 _ScreenSize);
+	void Start();
+
+private :
+	std::map<int, std::list<ConsoleObject*>> AllUpdateObject;
+	std::map<int, std::list<ConsoleObject*>> AllRenderObject;
+	bool EngineUpdate = true;
 };
 
