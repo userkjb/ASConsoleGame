@@ -11,6 +11,7 @@ class ConsoleCore
 	friend class ConsoleObject;
 
 public :
+	ConsoleScreen Screen = ConsoleScreen();
 
 	void Init(int2 _ScreenSize);
 	void Start();
