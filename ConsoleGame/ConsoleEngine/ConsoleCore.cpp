@@ -60,7 +60,9 @@ void ConsoleCore::Start()
 					Screen.SetChar(Object);
 				}
 			}
-		}// End
+		}
+		Screen.PrintScreen();
+		// End
 	}
 }
 
